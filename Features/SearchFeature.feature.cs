@@ -77,6 +77,7 @@ namespace Bunnings.Features
         [NUnit.Framework.DescriptionAttribute("Bunnings Customers can search products on Bunnings website")]
         [NUnit.Framework.CategoryAttribute("mytag")]
         [NUnit.Framework.TestCaseAttribute("chrome", null)]
+        [NUnit.Framework.TestCaseAttribute("firefox", null)]
         public virtual void BunningsCustomersCanSearchProductsOnBunningsWebsite(string browser, string[] exampleTags)
         {
             string[] @__tags = new string[] {
@@ -127,6 +128,7 @@ this.ScenarioInitialize(scenarioInfo);
         [NUnit.Framework.DescriptionAttribute("Bunnings Customer is suggested products based on search term Entered")]
         [NUnit.Framework.CategoryAttribute("mytag")]
         [NUnit.Framework.TestCaseAttribute("chrome", null)]
+        [NUnit.Framework.TestCaseAttribute("firefox", null)]
         public virtual void BunningsCustomerIsSuggestedProductsBasedOnSearchTermEntered(string browser, string[] exampleTags)
         {
             string[] @__tags = new string[] {
@@ -139,7 +141,7 @@ this.ScenarioInitialize(scenarioInfo);
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             argumentsOfScenario.Add("Browser", browser);
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Bunnings Customer is suggested products based on search term Entered", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 17
+#line 18
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -159,13 +161,13 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 18
+#line 19
 testRunner.Given("Customer launches Bunnings website", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 19
+#line 20
 testRunner.And("customer enters the search term \"Ryobi\" on the bunnings website search field", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 20
+#line 21
 testRunner.Then("Customer is displayed a list of product sugesstions for the search term \"Ryobi\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
@@ -177,6 +179,7 @@ testRunner.Then("Customer is displayed a list of product sugesstions for the sea
             " dialogue")]
         [NUnit.Framework.CategoryAttribute("mytag")]
         [NUnit.Framework.TestCaseAttribute("chrome", null)]
+        [NUnit.Framework.TestCaseAttribute("firefox", null)]
         public virtual void BunningsCustomerCanFindFurtherDetailsRegardingFlybuysPointsOnTheSearchDialogue(string browser, string[] exampleTags)
         {
             string[] @__tags = new string[] {
@@ -190,7 +193,7 @@ testRunner.Then("Customer is displayed a list of product sugesstions for the sea
             argumentsOfScenario.Add("Browser", browser);
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Bunnings customer can find further details regarding flybuys points on the search" +
                     " dialogue", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 28
+#line 31
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -210,10 +213,10 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 29
+#line 32
 testRunner.Given("Customer launches Bunnings website", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 30
+#line 33
 testRunner.Then("Customer can find out more information regarding Flybuys points by clicking on th" +
                         "e Find out Banner", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden

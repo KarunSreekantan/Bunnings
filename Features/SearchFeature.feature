@@ -11,6 +11,7 @@ Scenario:  Bunnings Customers can search products on Bunnings website
 	Examples: 
 	| Browser |
 	| chrome  |
+	| firefox |
 
 
 @mytag
@@ -22,6 +23,8 @@ Then   Customer is displayed a list of product sugesstions for the search term "
 	Examples: 
 	| Browser |
 	| chrome  |
+	| firefox |
+
 
 
 @mytag
@@ -32,3 +35,4 @@ Then   Customer can find out more information regarding Flybuys points by clicki
 	Examples: 
 	| Browser |
 	| chrome  |
+	| firefox |
