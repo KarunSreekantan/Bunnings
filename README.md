@@ -13,6 +13,6 @@ Test Automation Framework built for Bunnings Challenge
   <li>You can view your test results on Visula Studio and an Extent Test Report is created and saved under the Reports Folder in the Bunnings.Sln,the file "index.html" consists the current test run report.This report can be opened using the chrome browser</li>
   
   
-  
+FYI: Primary browser used for automation is chrome Browser  
   
 </ul>
