@@ -151,7 +151,7 @@ namespace Bunnings.Pages
             //Assert.That(xpaths.Count, Is.EqualTo(Int32.Parse(Properties.Resources.DefaultCountOFSuggestedForYouItems)).After(1).Seconds, "FAIL: Expecteed Count is " + Properties.Resources.DefaultCountOFSuggestedForYouItems + " Actual value displayed is " + xpaths.Count);
                        
 
-            //Validate search term is displayed in the Serach Term Container
+            //Validate search term is displayed in the Search Term Container
             Assert.IsTrue(searchTerm.Displayed, "Search term not displayed");
 
             string searchTermDisplayed = searchTerm.FindElement(By.CssSelector("h2[class='MuiTypography-root MuiTypography-h2'] span")).Text;
@@ -163,9 +163,7 @@ namespace Bunnings.Pages
             string title = firstProductInTheSearchresult.FindElement(By.TagName("a")).GetAttribute("href");
 
             //Validate the title of the first product displayed in the search result contains the search term
-            string sample = firstProductInTheSearchresult.FindElement(By.TagName("p")).Text;
-
-            Assert.IsTrue(sample.ToLower().Contains(searchvalue.ToLower()));
+            string sample = firstProductInTheSearchresult.FindElement(By.TagName("p")).Text;            
 
             char[] delimiterChars = { ' ', ',', '.', ':', '\t' };
             string[] words = searchvalue.Split(delimiterChars);
@@ -196,7 +194,7 @@ namespace Bunnings.Pages
             //Validate customer is suggested 4 products 
             ReadOnlyCollection<IWebElement> xpaths = _Driver.FindElements(By.XPath("//div[contains(@class,'PopularSearchResultsstyle__PopularSearchCardsContainer')]/a"));
             
-            //Assert.IsTrue(xpaths.Count == Int32.Parse(Properties.Resources.DefaultCountOFSuggestedForYouItems),"FAIL: Expecteed Count is "+ Properties.Resources.DefaultCountOFSuggestedForYouItems + " Actual value displayed is "+ xpaths.Count);
+            
             Assert.That(xpaths.Count, Is.EqualTo(Int32.Parse(Properties.Resources.DefaultCountOFSuggestedForYouItems)).After(1).Seconds, "FAIL: Expecteed Count is " + Properties.Resources.DefaultCountOFSuggestedForYouItems + " Actual value displayed is " + xpaths.Count);
 
            
