@@ -1,4 +1,13 @@
 # C# Selenium Test Automation Framework with Specflow
+I have spent 1-2 hrs a day for 5 days to complete this challenge.
+
+As part of the challenge i have uploaded teh following documents
+<li>Bunnings Test strategy document uploaded in the repo</li>
+<li>Bunnings Test Approach in an Agile development environment</li>
+<li>Bunnings Test Cases</li>
+<li>Bunings Scenario</li>
+<li>Bunnings Automation Framewrok</li>
+
 Test Automation Framework built for Bunnings Challenge 
 
 
