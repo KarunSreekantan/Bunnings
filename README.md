@@ -14,5 +14,22 @@ Test Automation Framework built for Bunnings Challenge
   
   
 FYI: Primary browser used for automation is chrome Browser  
-  
+
+<h2>Soliution Folder Structure </h2>
+  Features : Features Folder consits of Specfloe Test features
+
+Hooks : Hooks.cs class consists of code that is executed after or before particular event like [BeforeTestRun],[BeforeFeature],[BeforeScenario],[AfterStep],[AfterScenario],  [AfterTestRun]
+
+Pages : Concists of classes that represent PAGE object Models of automated web pages.
+
+Reports : Extent report
+
+Step Definitions: Contains Step definitions 
+
+Utils : Consists of code for Config,Custom Controls , Driver helper and Extent Manger (Test reporting)
+
+
+    
 </ul>
+
+
